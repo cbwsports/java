@@ -1,0 +1,23 @@
+package me.cwrightmc.ws;
+
+import java.util.List;
+
+public interface EmployeeInterface {
+	
+	public Employee createEmployee(String fName, String lName, String title, String email, int age, int salary);
+
+//	public void updateEmployee(Employee employee);
+//
+//	public void removeEmployee(Employee employee);
+//
+	public List<Employee> listEmployee();
+//
+//	public List<Employee> describeEmployeeFirst(String fname);
+//
+//	public List<Employee> describeEmployeeLast(String lname);
+//
+//	public Employee searchEmployee(int id);
+//
+//	public Employee describeEmployee(int id);
+	
+}

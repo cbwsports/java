@@ -1,0 +1,20 @@
+package com.cwright.api;
+
+public class Employee {
+	public static int idCounter = 0;
+	public int id;
+	public int salary;
+	public String firstName;
+	public String lastName;
+	public String title;
+	public String email;
+	
+	Employee(int salary, String firstName, String lastName, String title, String email){
+		this.id = idCounter++;
+		this.salary = salary;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.title = title;
+		this.email = email;
+	}
+}

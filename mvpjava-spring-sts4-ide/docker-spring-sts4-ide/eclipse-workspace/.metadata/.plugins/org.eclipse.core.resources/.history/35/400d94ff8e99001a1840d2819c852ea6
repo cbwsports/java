@@ -1,0 +1,18 @@
+package com.cwright.ws.hello;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MainApp extends SpringBootServletInitializer {
+
+	public static void main(String[] args) {
+		SpringApplication.run(MainApp.class, args);
+	}
+
+	@Override
+	protected SpringAplicationBuilder configure(SpringAplicationBuilder builder) {
+		return builder.sources(MainApp.class);
+	}
+
+}

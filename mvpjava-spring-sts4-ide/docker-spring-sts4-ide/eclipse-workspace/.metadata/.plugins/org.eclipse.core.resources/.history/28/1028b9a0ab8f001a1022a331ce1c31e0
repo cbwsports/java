@@ -1,0 +1,5 @@
+package com.cwright.ws;
+
+public class Hello {
+
+}

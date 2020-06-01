@@ -1,0 +1,43 @@
+package me.cwrightmc.ws;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class EmployeeImpl{
+
+	List<Employee> employees = new ArrayList<Employee>(); 
+
+	public void createEmployee(Employee employee){
+		employees.add(employee);
+	}
+
+	public void updateEmployee(Employee employee){
+		//sql command to update
+	}
+
+	public void removeEmployee(Employee employee){
+		employees.remove(employee);
+	}
+
+	public List<Employee> listEmployee(){
+		return employees;
+	}
+
+	public List<Employee> describeEmployeeFirst(String fname){
+		List<Employee> employeeList = new ArrayList<Employee>();
+		return employeeList;
+	}
+
+	public List<Employee> describeEmployeeLast(String lname){
+		List<Employee> employeeList = new ArrayList<Employee>();
+		return employeeList;
+	}
+
+	public Employee searchEmployee(int id){
+		return employees.get(id);
+	}
+
+	public Employee describeEmployee(int id){
+		return employees.get(id);
+	}
+}

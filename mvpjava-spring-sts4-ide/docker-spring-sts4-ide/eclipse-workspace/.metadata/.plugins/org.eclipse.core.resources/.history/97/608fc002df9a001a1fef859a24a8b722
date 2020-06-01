@@ -1,0 +1,21 @@
+package me.cwrightmc.ws;
+
+import org.springframework.web.bind.annotation.GetMapping;
+//import org.springframework.web.bind.annotation.PostMapping;
+//import org.springframework.web.bind.annotation.PutMapping;
+//import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Autowired;
+
+@RestController
+public class EmployeeController {
+	
+	@Autowired
+	EmployeeInterface empImpl;
+	
+	@GetMapping("/create")
+	public Employee createEmp() {
+		return empImpl.createEmployee("Chris", "Wright", "DevOps Engineer" , "cbwsports@gmail.com", 29, 100000);
+	}
+		
+}
